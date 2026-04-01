@@ -54,16 +54,16 @@
                   <a href="https://graliuce.github.io/" target="_blank">Grace Liu<sup>1</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="#" target="_blank">Brian Christian<sup>2</sup></a>,
+                  <a href="https://brianchristian.org/" target="_blank">Brian Christian<sup>2</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="#" target="_blank">Tsvetomira Dumbalska<sup>2</sup></a>,
+                  <a href="https://tsvetomira-dumbalska.github.io/" target="_blank">Tsvetomira Dumbalska<sup>2</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="#" target="_blank">Michiel A. Bakker<sup>3</sup></a>,
+                  <a href="https://miba.dev/" target="_blank">Michiel A. Bakker<sup>3</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="#" target="_blank">Rachit Dubey<sup>4</sup></a>
+                  <a href="https://rachit-dubey.github.io/" target="_blank">Rachit Dubey<sup>4</sup></a>
                 </span>
               </div>
 
@@ -135,6 +135,25 @@
       </div>
     </section>
 
+    <!-- Page Outline -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <div class="content has-text-centered">
+              <h3 class="title is-4">Outline</h3>
+              <p class="tw-text-lg">
+                <a href="#exp1" class="tw-mx-3">Experiment 1</a> |
+                <a href="#exp2" class="tw-mx-3">Experiment 2</a> |
+                <a href="#exp3" class="tw-mx-3">Experiment 3</a> |
+                <a href="#key-findings" class="tw-mx-3">Key Findings</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Experimental Design Figure -->
     <section class="hero teaser" id="design">
       <div class="container is-max-desktop">
@@ -160,10 +179,7 @@
 
             <div class="content has-text-justified">
               <p>
-                To investigate the causal impact of AI assistance on subsequent problem-solving capacity, we conducted a large-scale, randomized controlled experiment (N = 354) on fraction-solving tasks. Participants were randomly assigned to an AI condition or a control condition. In the AI condition, participants solved 12 fraction problems with an AI assistant (GPT-5) available. The AI was then removed without warning, and all participants solved 3 additional test problems independently.
-              </p>
-              <p>
-                We find that while AI assistance improved performance during the learning phase, participants in the AI condition performed significantly worse once the AI was removed, and were significantly more likely to skip (give up on) problems compared to control participants.
+                To investigate the causal impact of AI assistance on subsequent problem-solving capacity, we conducted a large-scale, randomized controlled experiment (N = 354) on fraction-solving tasks. Participants were randomly assigned to an AI condition or a control condition. In the AI condition, participants solved 12 fraction problems with an AI assistant (GPT-5) available in a sidebar. The AI was then removed without warning, and all participants solved 3 additional test problems independently. Participants in the AI condition had a significantly lower solve rate (mean 0.57 vs. 0.73; <i>p</i> &lt; 0.001, Cohen's <i>d</i> = −0.42) and higher skip rate (mean 0.20 vs. 0.11; <i>p</i> = 0.031, Cohen's <i>d</i> = 0.25) than control participants.
               </p>
             </div>
 
@@ -171,7 +187,7 @@
               <img src="static/images/exp1_new.png" alt="Experiment 1 Results" width="90%" />
             </div>
             <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
-              <b>AI impairs unassisted performance and persistence.</b> (Left) Participants' mean solve rate and skip rate per problem over time, with 95% confidence intervals. Dashed gray lines denote the transition between learning and test problems. (Right) Participants' mean test solve rate and skip rate. Participants in the AI condition had a significantly lower solve rate (mean 0.57 vs. 0.73; <i>p</i> &lt; 0.001) and higher skip rate (mean 0.20 vs. 0.11; <i>p</i> = 0.031) than control participants.
+              <b>AI impairs unassisted performance and persistence.</b> (a) Participants' mean solve rate and skip rate per problem in the order presented, with 95% confidence intervals (CIs). Dashed gray lines denote the transition between learning and test problems. Problem difficulty increased across the experiment from one-step (problems 1–4) to two-step (problems 5–8) to three-step (problems 9–12). (b) Participants' mean test solve rate and skip rate with 95% CIs across participants. Test metrics are computed by averaging performance over the final three test problems for each participant.
             </p>
           </div>
         </div>
@@ -179,7 +195,7 @@
     </section>
 
     <!-- Experiment 2 -->
-    <section class="section hero is-light" id="exp2">
+    <section class="section" id="exp2">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-full-width">
@@ -187,7 +203,7 @@
 
             <div class="content has-text-justified">
               <p>
-                Experiment 2 replicated our findings (N = 667) with two key methodological improvements: (1) a pretest phase for ability-based exclusions to address potential skill-level confounds, and (2) a matched sidebar interface for control participants to eliminate interface asymmetry. Despite these controls, we replicated the core effects: AI assistance improved performance during the learning phase but impaired independent performance at test.
+                Experiment 2 replicated our findings (N = 667) with two key methodological improvements: (1) a pretest phase for ability-based exclusions to address potential skill-level confounds from Experiment 1, and (2) a matched sidebar interface for control participants to eliminate interface asymmetry. Despite these controls, we replicated the core effects: AI assistance improved performance during the learning phase but impaired independent performance at test. Participants in the AI condition had a significantly lower solve rate (mean 0.71 vs. 0.77; <i>p</i> = 0.020, Cohen's <i>d</i> = −0.19) than control participants.
               </p>
             </div>
 
@@ -195,15 +211,15 @@
               <img src="static/images/exp2_new.png" alt="Experiment 2 Results" width="90%" />
             </div>
             <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
-              <b>Replication of results in Experiment 2.</b> Participants' mean solve rate and skip rate per problem over time with 95% CIs (left), and mean test solve rate and skip rate (right). Participants in the AI condition had a significantly lower solve rate (mean 0.71 vs. 0.77; <i>p</i> = 0.020) than control participants.
+              <b>Replication of results in Experiment 2.</b> (a) Participants' mean solve rate and skip rate per problem in the order presented with 95% CIs. Problems increased in difficulty from one-step (problems 4–6) to two-step (problems 7–10) to three-step (problems 11–14) problems. (b) Participants' mean test solve rate and test skip rate with 95% CIs.
             </p>
 
-            <br />
+            <br /><br />
 
-            <h3 class="title is-4">Persistence Costs Are Concentrated Among Those Who Obtain Direct Solutions</h3>
+            <h3 class="title is-4">Effects Are Concentrated Among Users Who Seek Direct Solutions</h3>
             <div class="content has-text-justified">
               <p>
-                Analyzing AI usage patterns, we find that the majority of participants (61%) used AI to get answers directly. These participants showed the largest declines in performance and persistence. By contrast, participants who used AI to get hints or clarifications showed no significant declines relative to control.
+                Analyzing self-reported AI usage patterns, we find that the majority of participants (61%) used AI to get answers directly. These participants showed the largest declines in performance and persistence — not only compared to control participants but also compared to participants who used AI for hints or clarifications. Participants who used AI for hints showed no significant impairments relative to control.
               </p>
             </div>
 
@@ -211,7 +227,7 @@
               <img src="static/images/exp2_category_plots.png" alt="Experiment 2 Usage Category Plots" width="90%" />
             </div>
             <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
-              <b>Performance and persistence declines are concentrated among participants who obtained direct solutions from AI.</b> (a) AI usage groups show no significant differences in solve rate or skip rate at pretest, suggesting comparable initial skill levels. (b) Groups differ significantly at test: participants who used AI for direct answers show the lowest solve rate and highest skip rate. (c) Participants who used AI for direct answers show the largest declines relative to their own pretest performance.
+              <b>Performance and persistence declines are concentrated among participants who obtained direct solutions from AI.</b> (a) AI usage groups show no significant differences in solve rate or skip rate at pretest (one-way ANOVA), suggesting comparable initial skill and motivation levels. (b) Groups differ significantly at test (one-way ANOVA): participants who used AI for direct answers show the lowest solve rate and highest skip rate at test-time. (c) Participants who used AI for direct answers show decline in performance (solve rate) and increased disengagement (skip rate) relative to their own pretest performance. Other groups show similar or improved performance relative to their pretest performance.
             </p>
           </div>
         </div>
@@ -227,10 +243,7 @@
 
             <div class="content has-text-justified">
               <p>
-                To test whether effects generalize beyond arithmetic, we replicated our design in a reading comprehension task using SAT-style reading problems (N = 201). Reading comprehension draws on fundamentally different cognitive skills than mathematical reasoning, allowing us to assess the generality of the AI-assistance effect.
-              </p>
-              <p>
-                Replicating Experiments 1 and 2, we find that AI assistance improved performance during the learning phase, but participants in the AI condition performed significantly worse and were more likely to give up once the AI was removed.
+                To test whether effects generalize beyond arithmetic, we replicated our design in a reading comprehension task using SAT-style problems (N = 201). Reading comprehension draws on fundamentally different cognitive skills — meaning-making and mental model construction — allowing us to assess the generality of the AI-assistance effect. Replicating Experiments 1 and 2, participants in the AI condition had a significantly lower solve rate (mean 0.76 vs. 0.89; <i>p</i> = 0.007, Cohen's <i>d</i> = −0.42) and higher skip rate (mean 0.08 vs. 0.01; <i>p</i> = 0.008, Cohen's <i>d</i> = 0.42) than control participants.
               </p>
             </div>
 
@@ -238,7 +251,7 @@
               <img src="static/images/exp3_new.png" alt="Experiment 3 Results" width="90%" />
             </div>
             <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
-              <b>Reduced performance and persistence in reading comprehension task.</b> Participants' mean solve rate and skip rate per problem over time (left) and at test (right). Participants in the AI condition had a significantly lower solve rate (mean 0.76 vs. 0.89; <i>p</i> = 0.007) and higher skip rate (mean 0.08 vs. 0.01; <i>p</i> = 0.008) than control participants.
+              <b>Reduced performance and persistence in reading comprehension task.</b> (a) Participants' mean solve rate and skip rate per problem in the order presented with 95% CI. Dashed gray lines denote transition between learning problems and test problems. (b) Participants' mean test solve rate and test skip rate with 95% CIs computed across the participants.
             </p>
           </div>
         </div>
@@ -254,19 +267,13 @@
             <div class="content has-text-justified">
               <ul>
                 <li>
-                  <strong>AI assistance reduces persistence:</strong> After brief AI-assisted sessions (~10 minutes), participants were significantly more likely to give up on problems once the AI was removed, compared to participants who never had AI assistance.
+                  <strong>AI assistance reduces persistence and impairs independent performance:</strong> After brief AI-assisted sessions (~10 minutes), participants were significantly more likely to give up on problems and performed significantly worse once the AI was removed, compared to participants who never had AI assistance. This pattern replicated across all three experiments.
                 </li>
                 <li>
-                  <strong>AI assistance impairs independent performance:</strong> Across all three experiments, participants who had AI assistance performed significantly worse on unassisted test problems than control participants who never had AI.
+                  <strong>Effects are concentrated among users who seek direct solutions:</strong> Persistence costs were concentrated among participants who prompted AI to solve tasks for them directly. Using AI for hints or clarifications did not produce significant impairments.
                 </li>
                 <li>
-                  <strong>Effects are driven by direct solution-seeking:</strong> Persistence costs were concentrated among participants who prompted AI to solve tasks for them directly. Using AI for hints or clarifications did not produce significant impairments.
-                </li>
-                <li>
-                  <strong>Effects generalize across domains:</strong> The pattern of reduced performance and persistence replicated across both mathematical reasoning (fraction arithmetic) and reading comprehension, suggesting it is a general consequence of AI-assisted problem solving.
-                </li>
-                <li>
-                  <strong>Brief exposure is sufficient:</strong> The effects emerged after only ~10–15 minutes of AI interaction, raising urgent questions about the cumulative effects of daily AI use on long-term human capability.
+                  <strong>Effects generalize across domains:</strong> The pattern replicated across mathematical reasoning (fraction arithmetic) and reading comprehension, suggesting it is a general consequence of AI-assisted problem solving, not an artifact of any particular task.
                 </li>
               </ul>
             </div>
