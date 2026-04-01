@@ -2,22 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Teaching LLMs When to Stop Seeking and Start Acting" />
-    <meta property="og:title" content="CaRT: Counterfactuals and Reasoning for Termination" />
-    <meta property="og:description" content="Teaching LLMs When to Stop Seeking and Start Acting" />
+    <meta name="description" content="AI Assistance Reduces Persistence and Hurts Independent Performance" />
+    <meta property="og:title" content="AI Assistance Reduces Persistence and Hurts Independent Performance" />
+    <meta property="og:description" content="Causal evidence that AI assistance reduces persistence and impairs unassisted performance across math reasoning and reading comprehension tasks." />
     <meta property="og:url" content="URL_PLACEHOLDER" />
-    <meta property="og:image" content="static/image/overview.png" />
+    <meta property="og:image" content="static/images/exp_design_figure.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <meta name="twitter:title" content="CaRT: Counterfactuals and Reasoning for Termination" />
-    <meta name="twitter:description" content="Teaching LLMs When to Stop Seeking and Start Acting" />
-    <meta name="twitter:image" content="static/image/overview.png" />
-    <meta name="twitter:card" content="static/image/overview.png" />
-    <meta name="keywords" content="CaRT, LLMs, termination, information seeking, medical diagnosis, reasoning" />
+    <meta name="twitter:title" content="AI Assistance Reduces Persistence and Hurts Independent Performance" />
+    <meta name="twitter:description" content="Causal evidence that AI assistance reduces persistence and impairs unassisted performance across math reasoning and reading comprehension tasks." />
+    <meta name="twitter:image" content="static/images/exp_design_figure.png" />
+    <meta name="twitter:card" content="static/images/exp_design_figure.png" />
+    <meta name="keywords" content="AI assistance, persistence, deskilling, human-AI collaboration, randomized controlled trial, cognitive offloading" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>CaRT</title>
+    <title>AI Assistance Reduces Persistence</title>
     <link rel="icon" type="image/x-icon" href="static/images/icon.png" />
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
 
@@ -47,45 +47,32 @@
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <h2 class="title is-2 publication-title">
-                Teaching LLMs When to Stop Seeking and Start Acting
+                AI Assistance Reduces Persistence and Hurts Independent Performance
               </h2>
               <div class="is-size-5 publication-authors">
                 <span class="author-block">
-                  <a href="https://graliuce.github.io//" target="_blank"
-                    >Grace Liu<sup>*1</sup></a
-                  >
-                  ,
+                  <a href="https://graliuce.github.io/" target="_blank">Grace Liu<sup>1</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://cohenqu.github.io/" target="_blank"
-                    >Yuxiao Qu<sup>*1</sup></a
-                  >
-                  ,
+                  <a href="#" target="_blank">Brian Christian<sup>2</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://www.cs.cmu.edu/~schneide/" target="_blank"
-                    >Jeff Schneider<sup>1</sup></a
-                  >
-                  ,
+                  <a href="#" target="_blank">Tsvetomira Dumbalska<sup>2</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://www.cs.cmu.edu/~aarti/" target="_blank"
-                    >Aarti Singh<sup>1</sup></a
-                  >
-                  ,
+                  <a href="#" target="_blank">Michiel A. Bakker<sup>3</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://aviralkumar2907.github.io/" target="_blank"
-                    >Aviral Kumar<sup>1</sup></a
-                  >
-                  ,
+                  <a href="#" target="_blank">Rachit Dubey<sup>4</sup></a>
                 </span>
               </div>
 
               <div class="is-size-5 publication-authors">
                 <span class="author-block">
-                  <sup>1</sup>Carnegie Mellon University,
-                  <sup>*</sup>Equal Contribution
+                  <sup>1</sup>Carnegie Mellon University &nbsp;
+                  <sup>2</sup>University of Oxford &nbsp;
+                  <sup>3</sup>Massachusetts Institute of Technology &nbsp;
+                  <sup>4</sup>University of California, Los Angeles
                 </span>
               </div>
 
@@ -103,9 +90,9 @@
                   <span class="link-block">
                     <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fab fa-github"></i>
+                        <i class="fas fa-archive"></i>
                       </span>
-                      <span>Code</span>
+                      <span>Archive</span>
                     </a>
                   </span>
                 </div>
@@ -116,31 +103,15 @@
       </div>
     </section>
 
-    <!-- Teaser -->
-    <section class="hero teaser">
-      <div class="container is-max-desktop">
-        <div class="hero-body">
-            <div class="has-text-centered">
-              <div class="text-center" style="display: flex; justify-content: center;">
-                <img src="static/images/cart_teaser.png" alt="CaRT Termination Behavior" class="mx-auto" style="width: 80%;"/>
-              </div>
-            </div>
-          <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-3">
-            <b>A schematic illustration of termination behavior with and without CaRT.</b> While LLMs typically fail to recognize the best points to stop thinking or questioning, our approach CaRT teaches them to correctly identify when they have gathered sufficient information to solve a task, avoiding wasted computation on easy problems and making steady progress on hard problems.
-          </p>    
-        </div>
-      </div>
-    </section>
-
     <!-- Abstract -->
-    <section class="section hero is-light">
+    <section class="section hero is-light" id="abstract">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Many tasks require machine learning models to strategically gather relevant information over multiple rounds of interaction before actually acting on a task. Strategic information gathering requires models to know not only how to effectively acquire information, but also when to stop gathering information and make a decision, in order to avoid overthinking or getting derailed when acting. In this paper, we formalize this problem and introduce <b>Counterfactuals and Reasoning for Termination (CaRT)</b>, an approach for teaching LLMs when to stop seeking information. To appropriately learn when to terminate, CaRT fine-tunes LLMs using counterfactual pairs of trajectories, one where termination is appropriate and a minimally modified version of the same trajectory where it is not. It trains the LLM to explain the rationale for the termination decision in either case via verbal reasoning, and imbues this capability into the base LLM via fine-tuning. We instantiate CaRT in two domains: interactive medical diagnosis and math problem solving. In both domains, we find that CaRT improves the efficiency of information gathering and task success rate compared to other fine-tuning methods.
+                People often optimize for long-term goals in collaboration: A mentor or companion doesn't just answer questions, but also scaffolds learning, tracks progress, and prioritizes the other person's growth over immediate results. In contrast, current AI systems are fundamentally short-sighted collaborators – optimized for providing instant and complete responses, without ever saying no (unless for safety reasons). What are the consequences of this dynamic? Here, through a series of randomized controlled trials on human-AI interactions (N = 1,222), we provide causal evidence for two key consequences of AI assistance: <b>reduced persistence</b> and <b>impairment of unassisted performance</b>. Across a variety of tasks, including mathematical reasoning and reading comprehension, we find that although AI assistance improves performance in the short-term, people perform significantly worse without AI and are more likely to give up. Notably, these effects emerge after only brief interactions with AI (~10 minutes). These findings are particularly concerning because persistence is foundational to skill acquisition and is one of the strongest predictors of long-term learning. We posit that persistence is reduced because AI conditions people to expect immediate answers, thereby denying them the experience of working through challenges on their own. These results suggest the need for AI model development to prioritize scaffolding long-term competence alongside immediate task completion.
               </p>
             </div>
           </div>
@@ -148,63 +119,15 @@
       </div>
     </section>
 
-    <!-- Problem Motivation -->
-    <section class="section" id="motivation">
+    <!-- Public Significance Statement -->
+    <section class="section" id="significance">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">The Termination Problem</h2>
-
-            <div class="tw-flex tw-flex-wrap tw-justify-center tw-gap-4">
-              <div class="tw-p-6 tw-shadow-lg tw-rounded-2xl tw-max-w-3xl tw-flex-1 tw-min-w-[300px]">
-                <h2 class="tw-text-xl tw-font-semibold tw-text-gray-700 tw-mb-4">Medical Diagnosis</h2>
-                <div class="tw-space-y-4">
-                  <div class="tw-flex tw-items-start">
-                    <div class="tw-bg-blue-100 tw-p-3 tw-rounded-lg tw-max-w-xs">
-                      <p class="tw-text-gray-700">Hi! What symptoms are you facing today?</p>
-                    </div>
-                  </div>
-                  <div class="tw-flex tw-items-start tw-justify-end">
-                    <div class="tw-bg-green-100 tw-p-3 tw-rounded-lg tw-max-w-xl">
-                      <p class="tw-text-gray-700">Chest pain, trouble breathing, nausea, tingling in my arms.</p>
-                    </div>
-                  </div>
-                  <div class="tw-flex tw-items-start">
-                    <div class="tw-bg-blue-100 tw-p-3 tw-rounded-lg tw-max-w-xs">
-                      <p class="tw-text-gray-700">What is your age and sex?</p>
-                    </div>
-                  </div>
-                  <div class="tw-flex tw-items-start tw-justify-end">
-                    <div class="tw-bg-green-100 tw-p-3 tw-rounded-lg tw-max-w-xl">
-                      <p class="tw-text-gray-700">I am a 25-year-old woman.</p>
-                    </div>
-                  </div>
-                  <div class="tw-flex tw-items-start">
-                    <div class="tw-bg-blue-100 tw-p-3 tw-rounded-lg tw-max-w-xs">
-                      <p class="tw-text-gray-700">Have you recently been under stress or experienced anxiety?</p>
-                    </div>
-                  </div>
-                  <div class="tw-flex tw-items-start tw-justify-end">
-                    <div class="tw-bg-green-100 tw-p-3 tw-rounded-lg tw-max-w-xl">
-                      <p class="tw-text-gray-700">I have been feeling very scared and panicked</p>
-                    </div>
-                  </div>
-                  <div class="tw-bg-yellow-100 tw-p-3 tw-rounded-lg">
-                    <p class="tw-text-gray-700 tw-text-sm">Final Diagnosis: Panic Attack</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-3">
-              <b>Simplified example of terminating information gathering in the medical diagnosis domain.</b>
-            </p>
-
-            <div class="content has-text-justified tw-mt-6">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Public Significance Statement</h2>
+            <div class="content has-text-justified tw-bg-blue-50 tw-p-6 tw-rounded-2xl">
               <p>
-                Deciding when to stop gathering information is challenging because it requires predicting the expected future utility of continuing under the model's current policy. 
-                We build an approach to imbue LLMs with the ability to stop or ``terminate'' their internal thinking processes and/or environment interaction at the right point for maximal performance, 
-                without wasting computation or interaction. 
+                The rapid rise of AI chatbots promises immediate and effective help with reasoning-intensive tasks such as studying, writing, coding, and brainstorming. But what happens to users' own abilities when the AI is not available? If people come to rely on AI for everyday problem solving, these tools may quietly erode the very skills they are designed to support. In large-scale experiments involving arithmetic and reading comprehension, we find that AI assistance improves immediate performance but comes at a cognitive cost: after only ~10 minutes of AI-assisted problem-solving, users who lose access to the AI assistant perform worse and give up more frequently than users who never had it. These findings raise urgent questions about the cumulative effects of daily AI use on human persistence and reasoning. Designing AI systems that preserve long-term competency, rather than simply delivering immediate answers, will require fundamentally rethinking how these tools collaborate with people.
               </p>
             </div>
           </div>
@@ -212,197 +135,112 @@
       </div>
     </section>
 
-    <!-- Method -->
-    <section class="section" id="method">
+    <!-- Experimental Design Figure -->
+    <section class="hero teaser" id="design">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">CaRT: Counterfactuals and Reasoning for Termination</h2>
-            
-            <div class="content has-text-justified">
-              <p>
-                Our approach combines two key components to teach LLMs effective termination behavior:
-              </p>
-            </div>
-
-            <h3 class="title is-4">Component 1: Hard Negative Counterfactuals</h3>
-            <div class="content has-text-justified">
-              <p>
-                For each trajectory where termination is optimal (success rate ≥ 50%), we create a minimally modified counterfactual where termination would be inappropriate (success rate < 30%). This isolates the exact piece of information that differentiates success from failure.
-              </p>
-              <div class="tw-flex tw-flex-wrap tw-justify-center tw-gap-4 tw-mt-6">
-                <!-- Original Version -->
-                <div class="tw-p-6 tw-bg-green-50 tw-shadow-lg tw-rounded-2xl tw-flex-1 tw-min-w-[300px] tw-max-w-md">
-                  <h3 class="tw-text-lg tw-font-semibold tw-text-green-700 tw-mb-4 tw-text-center">Original (Should Terminate)</h3>
-                  <div class="tw-space-y-3">
-                    <div class="tw-flex tw-items-start">
-                      <div class="tw-bg-blue-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm">Hi! What symptoms are you facing?</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start tw-justify-end">
-                      <div class="tw-bg-green-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm">Chest pain, trouble breathing, nausea, tingling.</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start">
-                      <div class="tw-bg-blue-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm">What is your age and sex?</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start tw-justify-end">
-                      <div class="tw-bg-green-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm">I am a 25-year-old woman.</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start">
-                      <div class="tw-bg-blue-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm tw-font-semibold">Have you been under stress or anxiety?</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start tw-justify-end">
-                      <div class="tw-bg-green-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm tw-font-semibold">I've been feeling very scared and panicked.</p>
-                      </div>
-                    </div>
-                    <div class="tw-bg-green-200 tw-p-2 tw-rounded-lg tw-mt-3">
-                      <p class="tw-text-gray-800 tw-text-xs tw-font-semibold tw-text-center">Decision: Terminate, Diagnosis: Panic Attack</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Counterfactual Version -->
-                <div class="tw-p-6 tw-bg-red-50 tw-shadow-lg tw-rounded-2xl tw-flex-1 tw-min-w-[300px] tw-max-w-md">
-                  <h3 class="tw-text-lg tw-font-semibold tw-text-red-700 tw-mb-4 tw-text-center">Counterfactual (Should NOT Terminate)</h3>
-                  <div class="tw-space-y-3">
-                    <div class="tw-flex tw-items-start">
-                      <div class="tw-bg-blue-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm">Hi! What symptoms are you facing?</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start tw-justify-end">
-                      <div class="tw-bg-green-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm">Chest pain, trouble breathing, nausea, tingling.</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start">
-                      <div class="tw-bg-blue-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm">What is your age and sex?</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start tw-justify-end">
-                      <div class="tw-bg-green-100 tw-p-2 tw-rounded-lg tw-max-w-xs">
-                        <p class="tw-text-gray-700 tw-text-sm">I am a 25-year-old woman.</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start">
-                      <div class="tw-bg-blue-100 tw-p-2 tw-rounded-lg tw-max-w-xs tw-opacity-50">
-                        <p class="tw-text-gray-700 tw-text-sm tw-italic">Do you have any family history of respiratory disease?</p>
-                      </div>
-                    </div>
-                    <div class="tw-flex tw-items-start tw-justify-end">
-                      <div class="tw-bg-green-100 tw-p-2 tw-rounded-lg tw-max-w-xs tw-opacity-50">
-                        <p class="tw-text-gray-700 tw-text-sm tw-italic">No, I don't have any family history of respiratory disease.</p>
-                      </div>
-                    </div>
-                    <div class="tw-bg-red-200 tw-p-2 tw-rounded-lg tw-mt-3">
-                      <p class="tw-text-gray-800 tw-text-xs tw-font-semibold tw-text-center">Decision: Continue</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p class="tw-text-sm tw-text-gray-500 tw-mt-4">
-                <b>Simplified counterfactual pair example.</b> The original trajectory (left) contains sufficient information to provide a diagnosis. The counterfactual (right, modified Q&A in gray) replaces this with a question that did not acquire the information needed to provide a diagnosis, making termination inappropriate.
-              </p>
-            </div>
-
-            <h3 class="title is-4">Component 2: Verbal Reasoning</h3>
-            <div class="content has-text-justified">
-              <p>
-                We augment each training example with explicit reasoning traces that explain why the current state warrants the termination decision. This reasoning serves as an implicit value function, helping the model predict whether to terminate or continue by reasoning about the implications before acting.
-              </p>
-              <div class="content has-text-justified tw-bg-blue-100 p-3 rounded-lg text-center mb-4">
-                <p><b>Example Reasoning Trace</b></p>
-                <p class="tw-text-left">&lt;think&gt; Based on the conversation so far, we have established that the patient is a 25-year-old woman experiencing chest pain, difficulty breathing, and feelings of panic. These symptoms, combined with the absence of cardiac risk factors and presence of acute anxiety, strongly suggest a panic attack rather than a cardiac event. We have sufficient information to make a confident diagnosis. &lt;/think&gt;</p>
-                <p class="tw-text-left"><b>Decision: Terminate</b></p>
-              </div>
-            </div>
-
-            <h3 class="title is-4">Training Objective</h3>
-            <div class="content has-text-justified">
-              <p>
-                We perform supervised fine-tuning (SFT) on counterfactual pairs with reasoning traces. This effectively optimizes for a policy that maximizes task reward while minimizing the number of information-seeking turns.
-              </p>
+        <div class="hero-body">
+          <div class="has-text-centered">
+            <div class="text-center" style="display: flex; justify-content: center;">
+              <img src="static/images/exp_design_figure.png" alt="Experimental Design" class="mx-auto" style="width: 90%;"/>
             </div>
           </div>
+          <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-3">
+            <b>Experimental design.</b> Participants were randomly assigned to an AI condition (with access to an AI assistant during a learning phase) or a control condition (no AI assistance). After the learning phase, the AI was removed and all participants completed the same test problems independently.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Results -->
-    <section class="section" id="results">
+    <!-- Experiment 1 -->
+    <section class="section" id="exp1">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-full-width">
-            <h2 class="title is-3">Results</h2>
+            <h2 class="title is-3">Experiment 1: AI Impairs Unassisted Performance and Persistence</h2>
 
-            <h3 class="title is-4">Medical Diagnosis</h3>
             <div class="content has-text-justified">
               <p>
-                CaRT outperforms both the base model and supervised fine-tuning baselines on medical diagnosis tasks. The model learns to terminate at optimal points, achieving higher success rates while asking fewer questions.
+                To investigate the causal impact of AI assistance on subsequent problem-solving capacity, we conducted a large-scale, randomized controlled experiment (N = 354) on fraction-solving tasks. Participants were randomly assigned to an AI condition or a control condition. In the AI condition, participants solved 12 fraction problems with an AI assistant (GPT-5) available. The AI was then removed without warning, and all participants solved 3 additional test problems independently.
               </p>
-              <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-                <img src="static/images/med_results.png" alt="Medical Diagnosis Results" width="80%" />
-              </div>
-              <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-                <img src="static/images/med_ood_results.png" alt="Medical Diagnosis Results" width="80%" />
-              </div>
-              <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
-                <b>CaRT performance on medical diagnosis.</b> (a) Results on holdout in-distribution data showing CaRT outperforms the base model and SFT baseline across all metrics. (b) CaRT maintains superior performance on out-of-distribution dermatology diagnosis tasks.
-              </p>
-            </div>
-
-            <h3 class="title is-4">Math Problem Solving</h3>
-            <div class="content has-text-justified">
               <p>
-                In the math domain, CaRT achieves higher success rates while using fewer tokens compared to baseline approaches. The model learns when to stop reasoning and provide an answer, avoiding unnecessarily long thinking traces.
-              </p>
-              <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-                <img src="static/images/math_results.png" alt="Math Reasoning Results" width="80%" />
-              </div>
-              <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
-                <b>CaRT performance on AIME2025 math problems.</b> CaRT outperforms the base model and SFT baseline, achieving higher success rates with fewer output tokens.
+                We find that while AI assistance improved performance during the learning phase, participants in the AI condition performed significantly worse once the AI was removed, and were significantly more likely to skip (give up on) problems compared to control participants.
               </p>
             </div>
-
-    
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ablation Studies -->
-    <section class="section" id="ablations">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Ablation Studies</h2>
 
             <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-              <img src="static/images/med_ablations.png" alt="Ablation Study Results" width="80%" />
+              <img src="static/images/exp1_new.png" alt="Experiment 1 Results" width="90%" />
             </div>
             <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
-              <b>Ablation study on medical diagnosis.</b> We ablate counterfactual training data and reasoning augmentation, showing that both components contribute to improved termination performance. Counterfactuals provide the largest gains.
+              <b>AI impairs unassisted performance and persistence.</b> (Left) Participants' mean solve rate and skip rate per problem over time, with 95% confidence intervals. Dashed gray lines denote the transition between learning and test problems. (Right) Participants' mean test solve rate and skip rate. Participants in the AI condition had a significantly lower solve rate (mean 0.57 vs. 0.73; <i>p</i> &lt; 0.001) and higher skip rate (mean 0.20 vs. 0.11; <i>p</i> = 0.031) than control participants.
             </p>
-            <br />
-            <br />
-  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiment 2 -->
+    <section class="section hero is-light" id="exp2">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Experiment 2: Replication and Ruling Out Confounds</h2>
+
+            <div class="content has-text-justified">
+              <p>
+                Experiment 2 replicated our findings (N = 667) with two key methodological improvements: (1) a pretest phase for ability-based exclusions to address potential skill-level confounds, and (2) a matched sidebar interface for control participants to eliminate interface asymmetry. Despite these controls, we replicated the core effects: AI assistance improved performance during the learning phase but impaired independent performance at test.
+              </p>
+            </div>
+
             <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-              <img src="static/images/term_trajs.png" alt="Termination Rate Curves" width="70%" />
+              <img src="static/images/exp2_new.png" alt="Experiment 2 Results" width="90%" />
             </div>
             <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
-              <b>Analysis of model termination rates.</b> We find that base models maintain low rates regardless of context and the baseline SFT learns to increase termination rate as conversation length increases (top row). Adding counterfactuals enables the model to learn to terminate when sufficient information is gathered (middle row), and reasoning smooths these curves while maintaining information sensitivity (bottom row).
+              <b>Replication of results in Experiment 2.</b> Participants' mean solve rate and skip rate per problem over time with 95% CIs (left), and mean test solve rate and skip rate (right). Participants in the AI condition had a significantly lower solve rate (mean 0.71 vs. 0.77; <i>p</i> = 0.020) than control participants.
             </p>
+
+            <br />
+
+            <h3 class="title is-4">Persistence Costs Are Concentrated Among Those Who Obtain Direct Solutions</h3>
+            <div class="content has-text-justified">
+              <p>
+                Analyzing AI usage patterns, we find that the majority of participants (61%) used AI to get answers directly. These participants showed the largest declines in performance and persistence. By contrast, participants who used AI to get hints or clarifications showed no significant declines relative to control.
+              </p>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+              <img src="static/images/exp2_category_plots.png" alt="Experiment 2 Usage Category Plots" width="90%" />
+            </div>
+            <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
+              <b>Performance and persistence declines are concentrated among participants who obtained direct solutions from AI.</b> (a) AI usage groups show no significant differences in solve rate or skip rate at pretest, suggesting comparable initial skill levels. (b) Groups differ significantly at test: participants who used AI for direct answers show the lowest solve rate and highest skip rate. (c) Participants who used AI for direct answers show the largest declines relative to their own pretest performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiment 3 -->
+    <section class="section" id="exp3">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Experiment 3: Convergent Evidence from Reading Comprehension</h2>
+
+            <div class="content has-text-justified">
+              <p>
+                To test whether effects generalize beyond arithmetic, we replicated our design in a reading comprehension task using SAT-style reading problems (N = 201). Reading comprehension draws on fundamentally different cognitive skills than mathematical reasoning, allowing us to assess the generality of the AI-assistance effect.
+              </p>
+              <p>
+                Replicating Experiments 1 and 2, we find that AI assistance improved performance during the learning phase, but participants in the AI condition performed significantly worse and were more likely to give up once the AI was removed.
+              </p>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+              <img src="static/images/exp3_new.png" alt="Experiment 3 Results" width="90%" />
+            </div>
+            <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-4">
+              <b>Reduced performance and persistence in reading comprehension task.</b> Participants' mean solve rate and skip rate per problem over time (left) and at test (right). Participants in the AI condition had a significantly lower solve rate (mean 0.76 vs. 0.89; <i>p</i> = 0.007) and higher skip rate (mean 0.08 vs. 0.01; <i>p</i> = 0.008) than control participants.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -416,10 +254,19 @@
             <div class="content has-text-justified">
               <ul>
                 <li>
-                  <strong>Counterfactual training examples with explicit reasoning help models learn good termination behavior:</strong> By training on counterfactual examples of termination with explicit reasoning, LLMs learn to recognize when they have acquired sufficient information to solve the task.
+                  <strong>AI assistance reduces persistence:</strong> After brief AI-assisted sessions (~10 minutes), participants were significantly more likely to give up on problems once the AI was removed, compared to participants who never had AI assistance.
                 </li>
                 <li>
-                  <strong>The approach generalizes across domains:</strong> CaRT demonstrates strong performance across both medical diagnosis tasks and mathematical problem solving, achieving higher accuracy with fewer tokens and interactions. 
+                  <strong>AI assistance impairs independent performance:</strong> Across all three experiments, participants who had AI assistance performed significantly worse on unassisted test problems than control participants who never had AI.
+                </li>
+                <li>
+                  <strong>Effects are driven by direct solution-seeking:</strong> Persistence costs were concentrated among participants who prompted AI to solve tasks for them directly. Using AI for hints or clarifications did not produce significant impairments.
+                </li>
+                <li>
+                  <strong>Effects generalize across domains:</strong> The pattern of reduced performance and persistence replicated across both mathematical reasoning (fraction arithmetic) and reading comprehension, suggesting it is a general consequence of AI-assisted problem solving.
+                </li>
+                <li>
+                  <strong>Brief exposure is sufficient:</strong> The effects emerged after only ~10–15 minutes of AI interaction, raising urgent questions about the cumulative effects of daily AI use on long-term human capability.
                 </li>
               </ul>
             </div>
@@ -427,21 +274,6 @@
         </div>
       </div>
     </section>
-
-    <!-- BibTeX -->
-    <!-- <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre><code>
-@article{anonymous2026cart,
-  title={Teaching LLMs When to Stop Seeking and Start Acting},
-  author={Anonymous},
-  journal={Under review at ICLR 2026},
-  year={2026}
-}
-        </code></pre>
-      </div>
-    </section> -->
 
     <footer class="footer">
       <div class="container">
@@ -451,12 +283,12 @@
               <p>
                 Corresponding author: Grace Liu (gliu2@andrew.cmu.edu)
                 <br />
-                
+
                 This page was built using the
                 <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">
                   Academic Project Page Template
                 </a>
-                which was adopted from the 
+                which was adopted from the
                 <a href="https://nerfies.github.io" target="_blank">Nerfies</a>
                 project page.
                 <br />

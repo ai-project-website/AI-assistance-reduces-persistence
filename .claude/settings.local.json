@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdftoppm --version)",
+      "Bash(pdftotext /Users/gliu2/Downloads/AI_Assistance_Reduces_Persistence.pdf -)"
+    ]
+  }
+}
