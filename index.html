@@ -42,7 +42,7 @@
   </head>
   <body>
     <section class="hero">
-      <div class="hero-body">
+      <div class="hero-body" style="padding-bottom: 0.75rem;">
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
@@ -69,10 +69,10 @@
 
               <div class="is-size-5 publication-authors">
                 <span class="author-block">
-                  <sup>1</sup>Carnegie Mellon University &nbsp;
+                  <sup>1</sup>CMU &nbsp;
                   <sup>2</sup>University of Oxford &nbsp;
-                  <sup>3</sup>Massachusetts Institute of Technology &nbsp;
-                  <sup>4</sup>University of California, Los Angeles
+                  <sup>3</sup>MIT &nbsp;
+                  <sup>4</sup>UCLA
                 </span>
               </div>
 
@@ -95,18 +95,11 @@
       </div>
     </section>
 
-    <!-- Abstract -->
-    <section class="section hero is-light" id="abstract">
+    <!-- Teaser GIF -->
+    <section class="section" id="teaser-gif" style="padding-top: 0.75rem;">
       <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                People often optimize for long-term goals in collaboration: A mentor or companion doesn't just answer questions, but also scaffolds learning, tracks progress, and prioritizes the other person's growth over immediate results. In contrast, current AI systems are fundamentally short-sighted collaborators – optimized for providing instant and complete responses, without ever saying no (unless for safety reasons). What are the consequences of this dynamic? Here, through a series of randomized controlled trials on human-AI interactions (N = 1,222), we provide causal evidence for two key consequences of AI assistance: <b>reduced persistence</b> and <b>impairment of unassisted performance</b>. Across a variety of tasks, including mathematical reasoning and reading comprehension, we find that although AI assistance improves performance in the short-term, people perform significantly worse without AI and are more likely to give up. Notably, these effects emerge after only brief interactions with AI (~10 minutes). These findings are particularly concerning because persistence is foundational to skill acquisition and is one of the strongest predictors of long-term learning. We posit that persistence is reduced because AI conditions people to expect immediate answers, thereby denying them the experience of working through challenges on their own. These results suggest the need for AI model development to prioritize scaffolding long-term competence alongside immediate task completion.
-              </p>
-            </div>
-          </div>
+        <div class="has-text-centered">
+          <img src="static/images/solve_rate_story.gif" alt="Solve Rate Story" style="max-width: 100%; display: block; margin: 0 auto;" />
         </div>
       </div>
     </section>
@@ -116,10 +109,10 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">Public Significance Statement</h2>
+            <h2 class="title is-3" style="display:none;">Public Significance Statement</h2>
             <div class="content has-text-justified tw-bg-blue-50 tw-p-6 tw-rounded-2xl">
               <p>
-                The rapid rise of AI chatbots promises immediate and effective help with reasoning-intensive tasks such as studying, writing, coding, and brainstorming. But what happens to users' own abilities when the AI is not available? If people come to rely on AI for everyday problem solving, these tools may quietly erode the very skills they are designed to support. In large-scale experiments involving arithmetic and reading comprehension, we find that AI assistance improves immediate performance but comes at a cognitive cost: after only ~10 minutes of AI-assisted problem-solving, users who lose access to the AI assistant perform worse and give up more frequently than users who never had it. These findings raise urgent questions about the cumulative effects of daily AI use on human persistence and reasoning. Designing AI systems that preserve long-term competency, rather than simply delivering immediate answers, will require fundamentally rethinking how these tools collaborate with people.
+                The rapid rise of AI chatbots promises immediate and effective help with reasoning-intensive tasks such as studying, writing, coding, and brainstorming. But what happens to users' own abilities when the AI is not available? In a series of large-scale human experiments, involving arithmetic and reading comprehension, we find that AI assistance improves immediate performance, but it comes at a heavy cognitive cost: after just &#x223C;10 minutes of AI-assisted problem-solving, people who lost access to the AI performed worse and gave up more frequently than those who never used it. These findings raise urgent questions about the cumulative effects of daily AI use on human persistence and reasoning. We caution that if such effects accumulate with sustained AI use, current AI systems &mdash; optimized only for short-term helpfulness &mdash; risk eroding the very human capabilities they are meant to support.
               </p>
             </div>
           </div>
@@ -142,22 +135,6 @@
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experimental Design Figure -->
-    <section class="hero teaser" id="design">
-      <div class="container is-max-desktop">
-        <div class="hero-body">
-          <div class="has-text-centered">
-            <div class="text-center" style="display: flex; justify-content: center;">
-              <img src="static/images/exp_design_figure.png" alt="Experimental Design" class="mx-auto" style="width: 90%;"/>
-            </div>
-          </div>
-          <p class="tw-text-left tw-text-sm tw-text-gray-500 tw-mt-3">
-            <b>Experimental design.</b> Participants were randomly assigned to an AI condition (with access to an AI assistant during a learning phase) or a control condition (no AI assistance). After the learning phase, the AI was removed and all participants completed the same test problems independently.
-          </p>
         </div>
       </div>
     </section>
@@ -259,13 +236,13 @@
             <div class="content has-text-justified">
               <ul>
                 <li>
-                  <strong>AI assistance reduces persistence and impairs independent performance:</strong> After brief AI-assisted sessions (~10 minutes), participants were significantly more likely to give up on problems and performed significantly worse once the AI was removed, compared to participants who never had AI assistance. This pattern replicated across all three experiments.
+                  <strong>AI assistance reduces persistence and impairs independent performance:</strong> After brief AI-assisted sessions (~10 minutes), participants were significantly more likely to give up on problems and performed significantly worse once the AI was removed, compared to participants who never had AI assistance. 
                 </li>
                 <li>
                   <strong>Effects are concentrated among users who seek direct solutions:</strong> Persistence costs were concentrated among participants who prompted AI to solve tasks for them directly. Using AI for hints or clarifications did not produce significant impairments.
                 </li>
                 <li>
-                  <strong>Effects generalize across domains:</strong> The pattern replicated across mathematical reasoning (fraction arithmetic) and reading comprehension, suggesting it is a general consequence of AI-assisted problem solving, not an artifact of any particular task.
+                  <strong>Effects generalize across domains:</strong> Effects replicated across fraction arithmetic and reading comprehension, suggesting it is a general consequence of AI-assisted problem solving, not specific to any particular task.
                 </li>
               </ul>
             </div>
